@@ -46,10 +46,10 @@
 
         AML {
             bindings = <
-&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
-&none  &none  &none                &none  &none  &none  &none  &none  &none                &none  &none  &none
+&trans  &trans    &trans    &trans  &trans                                                                                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans  &trans                                                                                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans  &mo 4                                                                                        &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB4  &mkp MB5                  &kp_mousekp LEFT_SHIFT MB3  &mousekp_kp MB2 SPACE  &mkp MB1  &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
