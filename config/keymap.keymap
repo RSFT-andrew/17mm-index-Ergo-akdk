@@ -3,15 +3,44 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        mouse_layer: mouse_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_LAYER";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
+
+        mousekp_kp: mousekp_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSEKP_KP";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
+
+        kp_mousekp: kp_mousekp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_MOUSEKP";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        default {
             bindings = <
-&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                             &kp  &kp  &kp  &kp  &kp
-&kp A             &kp U                   &kp X                 &kp C  &kp O                                                                             &kp  &kp  &kp  &kp  &kp
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 4 COMMA                                                                       &kp  &kp  &kp  &kp  &kp
-&lt 6 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &mt LEFT_SHIFT PERIOD  &kp SPACE  &mkp MB1  &kp  &kp  &kp            &kp  &kp  &kp
+&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                                                              &kp F  &kp S  &kp Y                &kp H                  &kp P
+&kp A             &kp U                   &kp X                 &kp C  &kp O                                                                                                              &kp R  &kp K  &kp T                &kp D                  &kp N
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 4 COMMA                                                                                                        &kp Z  &kp G  &kp B                &kp L                  &kp M
+&lt 6 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &mt LEFT_SHIFT PERIOD  &kp SPACE  &mkp MB1  &mouse_layer 5 MB1  &lt 3 ENTER  &kp BACKSPACE                &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANG1
             >;
         };
 
