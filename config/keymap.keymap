@@ -1,44 +1,71 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                             &kp  &kp  &kp  &kp  &kp
+&kp A             &kp U                   &kp X                 &kp C  &kp O                                                                             &kp  &kp  &kp  &kp  &kp
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 4 COMMA                                                                       &kp  &kp  &kp  &kp  &kp
+&lt 6 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &mt LEFT_SHIFT PERIOD  &kp SPACE  &mkp MB1  &kp  &kp  &kp            &kp  &kp  &kp
             >;
         };
 
-        layer_1 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+        AML {
+            bindings = <
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none                &none  &none  &none  &none  &none  &none                &none  &none  &none
             >;
         };
 
-        layer_2 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+        MouseLayer {
+            bindings = <
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none                &none  &none  &none  &none  &none  &none                &none  &none  &none
             >;
         };
 
-        layer_3 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+        Scroll {
+            bindings = <
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
+&none  &none  &none                &none  &none  &none  &none  &none  &none                &none  &none  &none
+            >;
+        };
+
+        Numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+        };
+
+        Symbols {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+        };
+
+        Bluetooth-Others {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
