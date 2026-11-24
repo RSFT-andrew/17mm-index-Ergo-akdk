@@ -55,10 +55,10 @@
 
         MouseLayer {
             bindings = <
-&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none
-&none  &none  &none                &none  &none  &none  &none  &none  &none                &none  &none  &none
+&trans  &trans    &trans    &trans  &trans                                                                                                &mkp MB4            &mkp MB5       &kp RG(W)                   &kp RS(RG(NUMBER_2))         &kp RC(RG(A))
+&trans  &trans    &trans    &trans  &trans                                                                                                &kp RS(RC(TAB))     &kp RC(TAB)    &kp RG(T)                   &kp RS(RG(NUMBER_1))         &kp RG(LEFT)
+&trans  &trans    &trans    &trans  &mo 4                                                                                                 &kp RC(LEFT_ARROW)  &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))        &kp RS(RG(V))                &kp RG(M)
+&trans  &mkp MB4  &mkp MB5                  &kp_mousekp LEFT_SHIFT MB3  &mousekp_kp MB2 SPACE  &mkp MB1  &mkp MB1  &lt 3 ENTER  &mkp MB2                                     &mt (RA(RG(UP))) RG(MINUS)  &mt (RA(RG(DOWN))) RG(PLUS)  &trans
             >;
         };
 
