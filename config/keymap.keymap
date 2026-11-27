@@ -33,6 +33,60 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Reset-Layer {
+            bindings = <&to 0>;
+            key-positions = <5 6>;
+        };
+
+        Layer2 {
+            bindings = <&tog 2>;
+            key-positions = <15 16>;
+        };
+
+        Layer3 {
+            bindings = <&tog 3>;
+            key-positions = <25 26>;
+        };
+
+        Layer4 {
+            bindings = <&tog 4>;
+            key-positions = <6 7>;
+        };
+
+        Layer5 {
+            bindings = <&tog 5>;
+            key-positions = <16 17>;
+        };
+
+        Layer6 {
+            bindings = <&tog 6>;
+            key-positions = <26 27>;
+        };
+
+        MouseButton3 {
+            bindings = <&mkp MB3>;
+            key-positions = <36 38>;
+        };
+
+        Reload {
+            bindings = <&kp RG(R)>;
+            key-positions = <40 39 41>;
+        };
+
+        BackSpace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 38>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <25 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
